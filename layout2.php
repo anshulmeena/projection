@@ -1,18 +1,18 @@
-<style>
-body {
-    padding-bottom: 40px;
-    padding-top: 60px;
-}
-</style>
 <?php
-include_once 'header/header.php';
+	include_once 'header/header.php';
 ?>
+<header id="overview" class="jumbotron subhead">
+  <div class="container">
+    <h1>Base CSS</h1>
+    <p class="lead">Fundamental HTML elements styled and enhanced with extensible classes.</p>
+  </div>
+</header>
 <div
 	class="container">
 
 	<!-- Docs nav    ================================================== -->
 	<div class="row">
-		<div class="span3 bs-docs-sidebar">
+		<!--  <div class="span3 bs-docs-sidebar">
 			<ul class="nav nav-list bs-docs-sidenav affix">
 				<li class="active"><a href="#download-bootstrap"><i
 						class="icon-chevron-right"></i> Download</a></li>
@@ -20,12 +20,8 @@ include_once 'header/header.php';
 						File structure</a></li>
 				<li class=""><a href="#contents"><i class="icon-chevron-right"></i>
 						What's included</a></li>
-				<li class=""><a href="#html-template"><i class="icon-chevron-right"></i>
-						HTML template</a></li>
-				<li class=""><a href="#what-next"><i class="icon-chevron-right"></i>
-						What next?</a></li>
 			</ul>
-		</div>
+		</div> -->
 		<div class="span9">
 
 			<!-- Download ================================================== -->
@@ -84,10 +80,8 @@ include_once 'header/header.php';
 				<p>Once downloaded, unzip the compressed folder to see the structure
 					of (the compiled) Bootstrap. You'll see something like this:</p>
 				<pre class="prettyprint">
-					<span class="pln">  bootstrap</span><span class="pun">/</span><span
-						class="pln">
-  </span><span class="pun">├──</span><span class="pln"> css</span><span
-						class="pun">/</span><span class="pln">
+					<span class="pln">  bootstrap</span><span class="pun">/</span><span class="pln"></span>
+  					</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
   </span><span class="pun">│</span><span class="pln">   </span><span
 						class="pun">├──</span><span class="pln"> bootstrap</span><span
 						class="pun">.</span><span class="pln">css
@@ -181,21 +175,7 @@ include_once 'header/header.php';
 					elements:
 				</p>
 				<ul>
-					<li>Button groups</li>
-					<li>Button dropdowns</li>
 					<li>Navigational tabs, pills, and lists</li>
-					<li>Navbar</li>
-					<li>Labels</li>
-					<li>Badges</li>
-					<li>Page headers and hero unit</li>
-					<li>Thumbnails</li>
-					<li>Alerts</li>
-					<li>Progress bars</li>
-					<li>Modals</li>
-					<li>Dropdowns</li>
-					<li>Tooltips</li>
-					<li>Popovers</li>
-					<li>Accordion</li>
 					<li>Carousel</li>
 					<li>Typeahead</li>
 				</ul>
@@ -205,117 +185,6 @@ include_once 'header/header.php';
 					them.</p>
 			</section>
 
-
-
-			<!-- HTML template ================================================== -->
-			<section id="html-template">
-				<div class="page-header">
-					<h1>4. Basic HTML template</h1>
-				</div>
-				<p class="lead">
-					With a brief intro into the contents out of the way, we can focus
-					putting Bootstrap to use. To do that, we'll utilize a basic HTML
-					template that includes everything we mentioned in the <a
-						href="#file-structure">File structure</a>.
-				</p>
-				<p>
-					Now, here's a look at a <strong>typical HTML file</strong>:
-				</p>
-				<pre class="prettyprint linenums">
-					<ol class="linenums">
-						<li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span>
-						</li>
-						<li class="L1"><span class="tag">&lt;html&gt;</span>
-						</li>
-						<li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span>
-						</li>
-						<li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span
-							class="pln">Bootstrap 101 Template</span><span class="tag">&lt;/title&gt;</span>
-						</li>
-						<li class="L4"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span>
-						</li>
-						<li class="L5"><span class="pln">  </span><span class="tag">&lt;body&gt;</span>
-						</li>
-						<li class="L6"><span class="pln">    </span><span class="tag">&lt;h1&gt;</span><span
-							class="pln">Hello, world!</span><span class="tag">&lt;/h1&gt;</span>
-						</li>
-						<li class="L7"><span class="pln">    </span><span class="tag">&lt;script</span><span
-							class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span
-							class="atv">"http://code.jquery.com/jquery-latest.js"</span><span
-							class="tag">&gt;&lt;/script&gt;</span>
-						</li>
-						<li class="L8"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span>
-						</li>
-						<li class="L9"><span class="tag">&lt;/html&gt;</span>
-						</li>
-					</ol>
-				</pre>
-				<p>
-					To make this <strong>a Bootstrapped template</strong>, just include
-					the appropriate CSS and JS files:
-				</p>
-				<pre class="prettyprint linenums">
-					<ol class="linenums">
-						<li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span>
-						</li>
-						<li class="L1"><span class="tag">&lt;html&gt;</span>
-						</li>
-						<li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span>
-						</li>
-						<li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span
-							class="pln">Bootstrap 101 Template</span><span class="tag">&lt;/title&gt;</span>
-						</li>
-						<li class="L4"><span class="pln">    </span><span class="com">&lt;!-- Bootstrap --&gt;</span>
-						</li>
-						<li class="L5"><span class="pln">    </span><span class="tag">&lt;link</span><span
-							class="pln"> </span><span class="atn">href</span><span
-							class="pun">=</span><span class="atv">"css/bootstrap.min.css"</span><span
-							class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span
-							class="atv">"stylesheet"</span><span class="tag">&gt;</span>
-						</li>
-						<li class="L6"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span>
-						</li>
-						<li class="L7"><span class="pln">  </span><span class="tag">&lt;body&gt;</span>
-						</li>
-						<li class="L8"><span class="pln">    </span><span class="tag">&lt;h1&gt;</span><span
-							class="pln">Hello, world!</span><span class="tag">&lt;/h1&gt;</span>
-						</li>
-						<li class="L9"><span class="pln">    </span><span class="tag">&lt;script</span><span
-							class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span
-							class="atv">"http://code.jquery.com/jquery-latest.js"</span><span
-							class="tag">&gt;&lt;/script&gt;</span>
-						</li>
-						<li class="L0"><span class="pln">    </span><span class="tag">&lt;script</span><span
-							class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span
-							class="atv">"js/bootstrap.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
-						</li>
-						<li class="L1"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span>
-						</li>
-						<li class="L2"><span class="tag">&lt;/html&gt;</span>
-						</li>
-					</ol>
-				</pre>
-				<p>
-					<strong>And you're set!</strong> With those two files added, you
-					can begin to develop any site or application with Bootstrap.
-				</p>
-			</section>
-
-			<section id="what-next">
-				<div class="page-header">
-					<h1>What next?</h1>
-				</div>
-				<p class="lead">Head to the docs for information, examples, and code
-					snippets, or take the next leap and customize Bootstrap for any
-					upcoming project.</p>
-				<a
-					onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Visit docs']);"
-					href="./scaffolding.html" class="btn btn-large btn-primary">Visit
-					the Bootstrap docs</a> <a
-					onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Customize']);"
-					style="margin-left: 5px;" href="./customize.html"
-					class="btn btn-large">Customize Bootstrap</a>
-			</section>
 		</div>
 	</div>
 </div>

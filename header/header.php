@@ -6,6 +6,12 @@
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.js"></script>
+<style>
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+</style>
 
 </head>
 <body>
@@ -13,10 +19,12 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a data-target=".nav-collapse" data-toggle="collapse"
-					class="btn btn-navbar"> <span class="icon-bar"></span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span>
-				</a> <a href="#" class="brand">Human Centered Computing</a>
+				<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar"> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</a> 
+				<a href="layout1.php" class="brand">DAALabs</a>
 				<div class="nav-collapse collapse">
 					<ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
