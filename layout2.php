@@ -7,22 +7,8 @@
     <p class="lead">Fundamental HTML elements styled and enhanced with extensible classes.</p>
   </div>
 </header>
-<div
-	class="container">
-
-	<!-- Docs nav    ================================================== -->
-	<div class="row">
-		<!--  <div class="span3 bs-docs-sidebar">
-			<ul class="nav nav-list bs-docs-sidenav affix">
-				<li class="active"><a href="#download-bootstrap"><i
-						class="icon-chevron-right"></i> Download</a></li>
-				<li class=""><a href="#file-structure"><i class="icon-chevron-right"></i>
-						File structure</a></li>
-				<li class=""><a href="#contents"><i class="icon-chevron-right"></i>
-						What's included</a></li>
-			</ul>
-		</div> -->
-		<div class="span9">
+<div class="container">
+		<div class="span12">
 
 			<!-- Download ================================================== -->
 			<section id="download-bootstrap">
@@ -186,7 +172,6 @@
 			</section>
 
 		</div>
-	</div>
 </div>
 <?php 
 		include_once 'footer/footer.php';

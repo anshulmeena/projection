@@ -4,7 +4,8 @@
 <title>Human Centered Computing</title>
 <link href="css/bootstrap.css" rel="stylesheet">
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-1.4.2.js"></script>
+
 <script src="js/bootstrap.js"></script>
 <style>
 body {
